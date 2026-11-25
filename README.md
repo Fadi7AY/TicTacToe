@@ -6,6 +6,22 @@ A fully interactive **Tic Tac Toe** game developed in **C**, featuring both **Pl
 
 ---
 
+## At a glance
+
+```mermaid
+flowchart LR
+    Start["Choose mode"] --> PVP["Player vs Player"]
+    Start --> AI["Player vs Computer"]
+    AI --> Easy["Easy · random"]
+    AI --> Medium["Medium · rules"]
+    AI --> Hard["Hard · minimax"]
+    PVP --> Board["3 × 3 board"]
+    Easy --> Board
+    Medium --> Board
+    Hard --> Board
+```
+
+
 ## 🧠 AI Difficulty Levels
 
 * **Easy** 🐢: Random move selection.
@@ -62,7 +78,7 @@ Player X, enter your move (1-9):
 
 ```
 .
-├── tic_tac_toe.c   # Main source file
+├── Tic-Tac-Toe.c   # Main source file
 ├── README.md       # Project documentation
 ```
 
@@ -73,14 +89,14 @@ Player X, enter your move (1-9):
 ### On Linux / MacOS:
 
 ```bash
-gcc tic_tac_toe.c -o tic_tac_toe
+gcc Tic-Tac-Toe.c -o tic_tac_toe
 ./tic_tac_toe
 ```
 
 ### On Windows (using GCC via MinGW):
 
 ```bash
-gcc tic_tac_toe.c -o tic_tac_toe.exe
+gcc Tic-Tac-Toe.c -o tic_tac_toe.exe
 tic_tac_toe.exe
 ```
 
